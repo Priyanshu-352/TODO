@@ -1,0 +1,126 @@
+*{
+    margin: auto;
+    padding:auto ;
+    font-family: "Slackside One", cursive;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    padding: 10px; 
+
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius:21px 12px 21px ;
+}
+.todo h2{
+    background:#ffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0 ;
+    border: radius 2px;
+    padding-left:20px ;
+    margin-bottom:25px ;
+
+
+}
+.row text{
+    border: 1px solid black;
+
+}
+input{
+    flex : 1 ;
+    border : none ; 
+    outline:none;
+    background: transparent; 
+}
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:url(check.png);
+
+}
+
+ #taskinput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#addTaskButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+#addTaskButton:hover {
+    background-color: blue;
+}
+
+.main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    margin-bottom: 9px;
+}
+
+.main li span {
+    flex-grow: 1;
+    cursor:crosshair;
+}
+
+.main li span.completed {
+    text-decoration: line-through;
+    color: #c82333;
+}
+
+.deleteButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}
